@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTO 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <div
+      class="flex text-xs py-2 items-center border-b px-5 md:px-96 justify-between"
+    >
+      <div class="flex gap-5">
+        <div class="flex items-center">
+          <p>USD</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="flex items-center">
+          <p>ENG</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-10 justify-between">
+        <div>
+          <p class="font-semibold text-gray-500 text-xs border-r pr-3">
+            FREE RETURNS. STANDARD SHIPPING ORDERS $99+
+          </p>
+        </div>
+        <div class="flex text-gray-600 border-r pr-3 gap-2 items-center">
+          <p>My Account</p>
+          <p>About Us</p>
+          <p>Blog</p>
+          <p>Cart</p>
+          <p>Log In</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M2 18.5C3.76504 19.521 5.81428 20 8 20C14.4808 20 19.7617 14.8625 19.9922 8.43797L22 4.5L18.6458 5C17.9407 4.37764 17.0144 4 16 4C13.4276 4 11.5007 6.51734 12.1209 8.98003C8.56784 9.20927 5.34867 7.0213 3.48693 4.10523C2.25147 8.30185 3.39629 13.3561 6.5 16.4705C6.5 17.647 3.5 18.3488 2 18.5Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M17.5078 6.5L17.4988 6.5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex py-8 items-center justify-between px-5 md:px-96">
+      <div class="hidden md:flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          color="#000000"
+          fill="none"
+        >
+          <path
+            d="M3.77762 11.9424C2.8296 10.2893 2.37185 8.93948 2.09584 7.57121C1.68762 5.54758 2.62181 3.57081 4.16938 2.30947C4.82345 1.77638 5.57323 1.95852 5.96 2.6524L6.83318 4.21891C7.52529 5.46057 7.87134 6.08139 7.8027 6.73959C7.73407 7.39779 7.26737 7.93386 6.33397 9.00601L3.77762 11.9424ZM3.77762 11.9424C5.69651 15.2883 8.70784 18.3013 12.0576 20.2224M12.0576 20.2224C13.7107 21.1704 15.0605 21.6282 16.4288 21.9042C18.4524 22.3124 20.4292 21.3782 21.6905 19.8306C22.2236 19.1766 22.0415 18.4268 21.3476 18.04L19.7811 17.1668C18.5394 16.4747 17.9186 16.1287 17.2604 16.1973C16.6022 16.2659 16.0661 16.7326 14.994 17.666L12.0576 20.2224Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <p class="text-gray-500 text-xs font-semibold">CALL US NOW</p>
+          <p class="font-bold text-lg">+123 5678 890</p>
+        </div>
+      </div>
+      <div>
+        <img src="./images/logo_red.png" class="w-28" />
+      </div>
+      <div class="flex gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          color="#000000"
+          fill="none"
+        >
+          <path
+            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          color="#000000"
+          fill="none"
+        >
+          <path
+            d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          color="#000000"
+          class="hidden md:block"
+          fill="none"
+        >
+          <path
+            d="M17.5 17.5L22 22"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          color="#000000"
+          fill="none"
+        >
+          <path
+            d="M3.87289 17.0194L2.66933 9.83981C2.48735 8.75428 2.39637 8.21152 2.68773 7.85576C2.9791 7.5 3.51461 7.5 4.58564 7.5H19.4144C20.4854 7.5 21.0209 7.5 21.3123 7.85576C21.6036 8.21152 21.5126 8.75428 21.3307 9.83981L20.1271 17.0194C19.7282 19.3991 19.5287 20.5889 18.7143 21.2945C17.9 22 16.726 22 14.3782 22H9.62182C7.27396 22 6.10003 22 5.28565 21.2945C4.47127 20.5889 4.27181 19.3991 3.87289 17.0194Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M17.5 7.5C17.5 4.46243 15.0376 2 12 2C8.96243 2 6.5 4.46243 6.5 7.5"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="py-3 hidden md:flex items-center justify-between px-96">
+      <div class="flex gap-5 text-xs font-bold text-black">
+        <p>HOME</p>
+        <div class="flex items-center gap-1">
+          <p>CATEGORİES</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="flex items-center gap-1">
+          <p>PRODUCTS</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="flex items-center gap-1">
+          <p>PAGES</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <p>BLOG</p>
+        <div class="flex items-center gap-1">
+          <p>ELEMENTS</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <p>CONTACT US</p>
+      </div>
+      <div class="text-black font-bold text-xs flex gap-4">
+        <p>SPECIAL OFFER!</p>
+        <p>BUY PORTO!</p>
+      </div>
+    </div>
+
+    <div class="md:px-96 mt-3">
+      <div class="w-full bg-gray-200 swiper-container">
+        <div class="bg-gray-400 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative">
+              <div class="absolute top-12 md:top-80 right-5">
+                <div
+                  class="w-60 md:w-96 py-2 md:py-10 flex justify-between items-center px-2 bg-red-500"
+                >
+                  <div class="flex flex-col items-center text-white">
+                    <p class="text-neutral-100 text-md">FURNITURE & GARDEN</p>
+                    <p class="font-bold text-xl md:text-4xl">HUGE SALE</p>
+                  </div>
+                  <p class="text-2xl md:text-7xl font-extrabold text-white">
+                    50%
+                  </p>
+                </div>
+                <button
+                  class="py-3 absolute right-0 mt-2 bg-slate-800 text-white font-semibold w-40"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+              <img src="./images/slides/slide-1.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide relative">
+              <div class="absolute top-12 md:top-80 left-5">
+                <div
+                  class="w-60 md:w-96 py-2 md:py-10 flex justify-between items-center px-2 bg-slate-800"
+                >
+                  <div class="flex flex-col items-center text-white">
+                    <p class="text-neutral-100 text-md">HOME OFFICE SALE</p>
+                    <p class="font-bold text-xl md:text-4xl">MEGA OFF</p>
+                  </div>
+                  <p class="text-2xl md:text-7xl font-extrabold text-white">
+                    50%
+                  </p>
+                </div>
+                <button
+                  class="py-3 absolute left-0 mt-2 bg-red-500 text-white font-semibold w-40"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+              <img src="./images/slides/slide-2.jpg" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mt-10 mb-10 flex md:flex-row flex-col items-center gap-3 justify-between px-5 md:px-96"
+    >
+      <div class="w-full">
+        <p class="text-center font-bold">SHOP LIVING ROOM</p>
+        <div class="py-3 border-b flex flex-col">
+          <img src="./images/banners/banner-living.jpg" />
+          <div class="flex items-center justify-between">
+            <p class="font-bold tracking-widest">LIVING ROOM</p>
+            <p class="text-gray-500 font-semibold">
+              Starting at
+              <span class="text-orange-600 font-bold">&dollar;999</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-center font-bold">SHOP LIVING ROOM</p>
+        <div class="py-3 flex flex-col border-b">
+          <img src="./images/banners/banner-dining.jpg" />
+          <div class="flex items-center justify-between">
+            <p class="font-bold tracking-widest">DINNING ROOM</p>
+            <p class="text-gray-500 font-semibold">
+              Starting at
+              <span class="text-orange-600 font-bold">&dollar;899</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-center font-bold">SHOP LIVING ROOM</p>
+        <div class="py-3 border-b flex flex-col">
+          <img src="./images/banners/banner-bedroom.jpg" />
+          <div class="flex items-center justify-between">
+            <p class="font-bold tracking-widest">BEDROOM</p>
+            <p class="text-gray-500 font-semibold">
+              Starting at
+              <span class="text-orange-600 font-bold">&dollar;799</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5 md:px-96">
+      <p class="text-center text-xl tracking-widest font-bold">
+        FEATURED PRODUCTS
+      </p>
+      <div class="grid mt-5 grid-cols-2 md:grid-cols-4 gap-3">
+        <div>
+          <img src="./images/products/product-24.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Porto Brown Chair</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;101.00 - &dollar;111.00
+          </p>
+        </div>
+        <div>
+          <img src="./images/products/product-21.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Both Sticky Info</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">&dollar;39.00 - &dollar;108.00</p>
+        </div>
+        <div>
+          <img src="./images/products/product-22.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Porto Sports Shoes</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;101.00 - &dollar;111.00
+          </p>
+        </div>
+        <div>
+          <img class="relative" src="./images/products/product-24.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Brown Leather Sofa</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;199.00 - &dollar;209.00
+          </p>
+        </div>
+        <div>
+          <img src="./images/products/product-24.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Porto Brown Chair</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;101.00 - &dollar;111.00
+          </p>
+        </div>
+        <div>
+          <img src="./images/products/product-21.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Both Sticky Info</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">&dollar;39.00 - &dollar;108.00</p>
+        </div>
+        <div>
+          <img src="./images/products/product-22.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Porto Sports Shoes</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;101.00 - &dollar;111.00
+          </p>
+        </div>
+        <div>
+          <img class="relative" src="./images/products/product-24.jpg" />
+          <div class="flex mt-3 items-center justify-between">
+            <p class="text-xs text-gray-500">WATCHES</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold">Brown Leather Sofa</p>
+          <p>☆☆☆☆☆</p>
+          <p class="text-black font-semibold">
+            &dollar;199.00 - &dollar;209.00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5 md:px-96 mt-10 mb-10">
+      <div
+        class="w-full h-32 flex px-2 md:px-60 items-center justify-between bg-black"
+      >
+        <div class="flex items-center text-right flex-col">
+          <p class="text-neutral-200 text-sm">FURNITURE & GARDEN</p>
+          <p class="text-white text-md md:text-4xl">HUGE SALE</p>
+        </div>
+        <div>
+          <p class="text-white font-semibold text-4xl md:text-8xl">50%</p>
+        </div>
+        <div>
+          <button class="py-3 px-8 bg-red-500 text-white font-semibold">
+            SHOP NOW
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="px-5 md:px-96 mb-10 flex md:flex-row flex-col gap-5 md:gap-10 items-center justify-between"
+    >
+      <div class="w-full">
+        <p class="text-lg font-bold tracking-widest">TOP RATED PRODUCTS</p>
+        <div class="flex mt-4 flex-col gap-5">
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-2.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Porto Arm Chair</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">&dollar;69.00</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-21.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Porto Sticky Info</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">
+                &dollar;39.00 - &dollar;108.00
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-10.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Red Chair</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">&dollar;299.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-lg font-bold tracking-widest">BEST SELLING PRODUCTS</p>
+        <div class="flex mt-4 flex-col gap-5">
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-22.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Brown Leather Sofa</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">
+                &dollar;199.00 - &dollar;209.00
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-25.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Product Extended</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">&dollar;105.00</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-24.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Sports Shoes</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">
+                &dollar;101.00 - &dollar;111.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-lg font-bold tracking-widest">LATEST PRODUCTS</p>
+        <div class="flex mt-4 flex-col gap-5">
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-23.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Product Left Sidebar</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">
+                &dollar;101.00 - &dollar;111.00
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-26.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Porto Evolution Headset</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">&dollar;69.00</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <img src="./images/products/product-2.jpg" class="w-48" />
+            </div>
+            <div>
+              <p class="text-gray-500 text-xs">FASHION</p>
+              <p class="font-semibold">Porto Brown Chair</p>
+              <p>☆☆☆☆☆</p>
+              <p class="text-lg font-semibold">&dollar;299.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5 md:px-96 mb-10">
+      <div
+        class="py-3 md:py-10 flex border-b items-center gap-5 justify-between border-t"
+      >
+        <img src="./images/brand/brand1.png" alt="" />
+        <img src="./images/brand/brand2.png" alt="" />
+        <img class="hidden md:block" src="./images/brand/brand3.png" alt="" />
+        <img class="hidden md:block" src="./images/brand/brand4.png" alt="" />
+        <img class="hidden md:block" src="./images/brand/brand5.png" alt="" />
+        <img class="hidden md:block" src="./images/brand/brand6.png" alt="" />
+      </div>
+    </div>
+
+    <div class="w-full flex-col items-center flex gap-5">
+      <p class="text-center text-lg font-bold tracking-widest">
+        FOLLOW ON INSTAGRAM
+      </p>
+      <div class="flex">
+        <img src="./images/instagram/1.jpg" />
+        <img src="./images/instagram/2.jpg" />
+        <img class="hidden md:block" src="./images/instagram/1.jpg" />
+        <img class="hidden md:block" src="./images/instagram/4.jpg" />
+        <img class="hidden md:block" src="./images/instagram/1.jpg" />
+        <img class="hidden md:block" src="./images/instagram/2.jpg" />
+        <img class="hidden md:block" src="./images/instagram/7.jpg" />
+        <img class="hidden md:block" src="./images/instagram/2.jpg" />
+        <img class="hidden md:block" src="./images/instagram/4.jpg" />
+      </div>
+    </div>
+
+    <footer class="bg-zinc-800">
+      <div
+        class="mx-auto max-w-screen-xl px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-10"
+      >
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="flex justify-center text-teal-600 sm:justify-start">
+              <img src="./images/logo_red.png" class="w-28" />
+            </div>
+            <p
+              class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
+            >
+              Lorem ipsum dolor
+            </p>
+
+            <p
+              class="text-md mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left text-white font-semibold"
+            >
+              QUESTIONS? <br />
+              <span class="text-teal-500 text-3xl font-semibold"
+                >1-888-123-456
+              </span>
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-5 lg:col-span-2"
+          >
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-white">Account</p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    My Account
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Track Your Order
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Payment Methods
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Shipping Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <ul class="mt-16 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    FAQs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Product Support
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Privacy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-white">About</p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    About Porto
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Our Gurantees
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Terms And Conditions
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <ul class="mt-16 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Return Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Intellectual Property Claims
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Site Map
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-white md:text-right">
+                Features
+              </p>
+
+              <ul class="mt-8 space-y-4 text-sm md:text-right">
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Powerful Admin Panel
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Mobile & Retina Optimized
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-300 transition hover:text-gray-300/75"
+                    href="#"
+                  >
+                    Super Fast HTML Template
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-100 pt-6">
+          <div class="text-center sm:flex sm:justify-center sm:text-left">
+            <p class="mt-4 text-sm text-white sm:order-first sm:mt-0">
+              © Porto eCommerce. 2021. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper", {
+          grabCursor: true,
+          speed: 600,
+          loop: true,
+          effect: "slide",
+          mousewheel: {
+            invert: false,
+            sensitivity: 1,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
